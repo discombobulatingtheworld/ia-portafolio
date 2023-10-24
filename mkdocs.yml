@@ -1,0 +1,61 @@
+site_name: Portafolio de Machine Learning
+site_url: https://discombobulatingtheworld.github.io/ia-portafolio/
+repo_url: https://github.com/discombobulatingtheworld/ia-portafolio
+repo_name: discombobulatingtheworld/ia-portafolio
+nav:
+  - Home: index.md
+  - Introducción:
+    - introduccion\01-definiciones.ipynb
+    - introduccion\02-herramientas.ipynb
+    - introduccion\03-crisp-dm.ipynb
+    - introduccion\04-comparacion-herramientas.ipynb
+    - introduccion\05-dataset.ipynb
+    - introduccion\06-dataset-estadistica.ipynb
+  - Tratamiento de datos:
+    - tratamiento-de-datos\00-introduccion.ipynb
+    - tratamiento-de-datos\01-estadistica.ipynb
+    - tratamiento-de-datos\02-valores-faltantes.ipynb
+    - tratamiento-de-datos\03-seleccion-atributos.ipynb
+    - tratamiento-de-datos\04-datos-anomalos.ipynb
+    - tratamiento-de-datos\05-escalado.ipynb
+  - Algoritmos Lineales: 
+    - algoritmos-lineales\00-introduccion.ipynb
+    - algoritmos-lineales\01-descenso-gradiente.ipynb
+    - algoritmos-lineales\02-regresion-lineal.ipynb
+    - algoritmos-lineales\03-regresion-logistica.ipynb
+    - algoritmos-lineales\04-analisis-discriminante-lineal.ipynb
+  - Algoritmos No Lineales:
+    - algoritmos-no-lineales\00-introduccion.ipynb
+    - algoritmos-no-lineales\01-knn.ipynb
+    - algoritmos-no-lineales\02-naive-bayes.ipynb
+  - Validación:
+    - validacion\00-introduccion.ipynb
+    - validacion\01-error-prueba-vs-entrenamiento.ipynb
+    - validacion\02-validacion-dividida.ipynb
+    - validacion\03-validacion-cruzada.ipynb
+    - validacion\04-contaminacion-accidental.ipynb
+  - Casos de Estudio:
+    - Enfermedad Cardíaca:
+      - casos-de-estudio\enfermedad-coronaria\01-introduccion.ipynb
+      - casos-de-estudio\enfermedad-coronaria\02-datos.ipynb
+      - casos-de-estudio\enfermedad-coronaria\03-regresion-logistica-rapidminer.ipynb
+      - casos-de-estudio\enfermedad-coronaria\04-regresion-logistica-python.ipynb
+    - Altura de Restos Oseos:
+      - casos-de-estudio\altura-osea\01-introduccion.ipynb
+      - casos-de-estudio\altura-osea\02-datos.ipynb
+      - casos-de-estudio\altura-osea\03-regresion-lineal-rapidminer.ipynb
+      - casos-de-estudio\altura-osea\04-regresion-lineal-python.ipynb
+plugins:
+    - mkdocs-jupyter
+    - search
+    - tags
+theme: 
+  name: material
+  language: es
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: deep purple
+  icon:
+    repo: fontawesome/brands/github
+use_directory_urls: true
