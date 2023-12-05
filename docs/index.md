@@ -1,17 +1,5 @@
 # Bienvenidos al Portfolio del Equipo 4
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+¡Bienvenidos a nuestro Portfolio del Equipo 4, donde la ciencia y la práctica convergen para explorar los intrincados mundos de los algoritmos y el tratamiento de datos! Como equipo compuesto por Antonia, Rodrigo, Maximiliano, Juan y Matías, nos complace presentarles nuestro portafolio, un compendio de artículos que abarcan desde temas introductorios al fascinante universo del machine learning hasta profundas inmersiones en diversos tipos de algoritmos y estrategias de tratamiento de datos.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+En nuestra página de inicio, les invitamos a sumergirse en casos de estudio que demuestran la aplicación práctica de estos conceptos en la resolución de desafíos concretos. Nuestra colección de artículos ofrece una guía integral, desde los fundamentos básicos del machine learning hasta las complejidades de algoritmos específicos, proporcionando una visión completa del panorama del aprendizaje automático. Esperamos que encuentren en nuestro portafolio un recurso valioso para explorar, comprender y apreciar la diversidad y el potencial transformador del machine learning en el tratamiento inteligente de los datos.
