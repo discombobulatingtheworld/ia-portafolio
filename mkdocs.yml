@@ -36,6 +36,10 @@ nav:
     - metodos-de-clustering\04-clustering-kmeans.ipynb
     - metodos-de-clustering\05-clustering-dbscan.ipynb
     - metodos-de-clustering\06-clustering-jerarquico.ipynb
+  - Selección de Características:
+    - seleccion-caracteristicas\00-introduccion.ipynb
+    - seleccion-caracteristicas\01-seleccion-caracteristicas.ipynb
+    - seleccion-caracteristicas\02-pca.ipynb
   - Validación:
     - validacion\00-introduccion.ipynb
     - validacion\01-error-prueba-vs-entrenamiento.ipynb
