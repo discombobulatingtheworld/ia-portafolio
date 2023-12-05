@@ -53,6 +53,12 @@ nav:
       - casos-de-estudio\altura-osea\02-datos.ipynb
       - casos-de-estudio\altura-osea\03-regresion-lineal-rapidminer.ipynb
       - casos-de-estudio\altura-osea\04-regresion-lineal-python.ipynb
+    - Enfermedad Hepática:
+      - casos-de-estudio\enfermedad-hepatica\01-introduccion.ipynb
+      - casos-de-estudio\enfermedad-hepatica\02-objetivo.ipynb
+      - casos-de-estudio\enfermedad-hepatica\03-datos.ipynb
+      - casos-de-estudio\enfermedad-hepatica\04-modelado-python.ipynb
+      - casos-de-estudio\enfermedad-hepatica\05-analisis-performance.ipynb
 plugins:
     - mkdocs-jupyter
     - search
