@@ -2431,18 +2431,18 @@ print(num_values)</div>
 </div>
 </div>
 </div>
-</div>These are the numerical features:
-age                   int64
-total_bilirubin     float64
-direct_bilirubin    float64
-total_proteins        int64
-albumin               int64
-A/G_ratio             int64
-SGPT                float64
-SGOT                float64
-alkphos             float64
-class                 int64
-dtype: object<div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="Tipo de datos" src="../images/liver_data_types.jpg"/></p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -2471,15 +2471,18 @@ print(data_describe)</div>
 </div>
 </div>
 </div>
-</div>              age  total_bilirubin  direct_bilirubin  total_proteins      albumin    A/G_ratio        SGPT        SGOT     alkphos       class
-count  583.000000       583.000000        583.000000      583.000000   583.000000   583.000000  583.000000  583.000000  579.000000  583.000000
-mean    44.746141         3.298799          1.486106      290.576329    80.713551   109.910806    6.483190    3.141852    0.947064    1.286449
-std     16.189833         6.209522          2.808498      242.937989   182.620356   288.918529    1.085451    0.795519    0.319592    0.452490
-min      4.000000         0.400000          0.100000       63.000000    10.000000    10.000000    2.700000    0.900000    0.300000    1.000000
-25%     33.000000         0.800000          0.200000      175.500000    23.000000    25.000000    5.800000    2.600000    0.700000    1.000000
-50%     45.000000         1.000000          0.300000      208.000000    35.000000    42.000000    6.600000    3.100000    0.930000    1.000000
-75%     58.000000         2.600000          1.300000      298.000000    60.500000    87.000000    7.200000    3.800000    1.100000    2.000000
-max     90.000000        75.000000         19.700000     2110.000000  2000.000000  4929.000000    9.600000    5.500000    2.800000    2.000000
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="Estadísticas" src="../images/liver_describe.jpg"/></p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -2536,7 +2539,7 @@ plt.show()</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="Matriz de correlación" src="../images/liver_rcorr_matrix.jpg"/></p>
+<p><img alt="Matriz de correlación" src="../images/liver_corr_matrix.jpg"/></p>
 <p>En el análisis inicial, quedó claro que ciertos atributos podrían no contribuir significativamente al poder predictivo del modelo final. Ciertos atributos muestran fuertes correlaciones con otros, lo que implica preocupaciones de redundancia y posibles problemas de multicolinealidad. Incluir tales atributos puede complicar el modelo sin agregar un valor sustantivo y, en algunos casos, incluso disminuir su capacidad de generalización. Para los fines de este estudio de caso, se considera que una correlación de mayores a 0.6 es fuerte y, por lo tanto, debe manejarse adecuadamente.</p>
 <p>Por lo tanto, como parte de este análisis preliminar de atributos y selección, se identificó un subconjunto de los atributos que posteriormente se eliminaron del conjunto de datos. Cada eliminación se fundamentó en justificaciones, asegurando que la integridad y el potencial de los datos permanecieran intactos, al tiempo que se eliminaba el ruido o la redundancia potencial. A continuación, se presenta una justificación detallada para la eliminación de cada atributo:</p>
 <ul>
@@ -3095,7 +3098,7 @@ plt.show()</div>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p><img alt="Gráficos" src="../images/liver_displots.jpg"/></p>
+<p><img alt="Gráficos" src="../images/liver_distplots.jpg"/></p>
 <p>Observando los gráficos, se puede observar que los atributos presentan sesgo, por lo que podría no ser beneficioso para el modelo. Pero antes atacar este problema, realizaremos algunas acciones previas.</p>
 <h2 id="creacion-variables-ficticias">Creación variables ficticias<a class="anchor-link" href="#creacion-variables-ficticias">¶</a></h2><p>La creación de variables ficticias, también conocidas como variables dummy, es una técnica esencial en el procesamiento de datos categóricos, ya que permite que los algoritmos manejen de manera efectiva esta información y generen modelos más precisos y significativos.</p>
 <p>Por tal motivo, se realiza la codificación de las variables categóricas utilizando el “LabelEncoder” de Scikit-learn.</p>
@@ -3431,18 +3434,18 @@ print(test_X.head())</div>
 </div>
 </div>
 </div>
-</div>          age  gender  total_bilirubin  total_proteins   albumin      SGPT   alkphos
-12   1.274661       1        -0.341111        0.692045  0.177292  0.465058 -0.203717
-161  1.026650       1         0.954231        0.728290  1.083531  0.077787  1.085058
-235 -0.647424       1        -0.125221       -0.340939 -0.395070  1.433234  0.144601
-330  0.654634       0         4.864247        2.939237 -0.315576  1.239599 -0.552034
-479  0.096609       1        -0.149209        0.737351 -0.601756 -0.212666 -1.596986
-          age  gender  total_bilirubin  total_proteins   albumin      SGPT   alkphos
-196  1.011160       1        -0.157213       -0.370931  0.209503  0.098060  1.037419
-187  0.142055       1        -0.297339       -0.399447 -0.186984  0.707873  1.388006
-14   1.011160       1        -0.344047       -0.734508  0.071594 -0.816660 -0.470105
-31  -1.720314       0        -0.344047       -0.734508 -0.531755  0.606238  0.616715
-680 -0.230419       1        -0.320693       -0.356673 -0.359370  0.153653 -0.638037
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="Datos" src="../images/liver_test_train_head.jpg"/></p>
+</div>
+</div>
+</div>
+</div>
 </div> <!-- jp-Notebook -->
 </div> <!-- jupyter-wrapper -->
 
